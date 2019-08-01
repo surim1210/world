@@ -23,5 +23,5 @@ print(world_df.sort_values(by='density', ascending=False))
 
 # 데이터 4개만 나온 도시
 
-country = world_df['Country'].value_counts() == 4
-print(country)
+country = world_df['Country'].value_counts()
+print(country[country==4])  # 조건문
